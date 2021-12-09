@@ -22,6 +22,35 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     change = 2
 })
+function 變數 () {
+    basic.clearScreen()
+    y = 0
+    if (x >= 4) {
+        dx += -1
+    } else if (x <= 0) {
+        dx += 1
+    }
+    if (x2 >= 4) {
+        dx2 += -1
+    } else if (x2 <= 0) {
+        dx2 += 1
+    }
+    if (x3 >= 4) {
+        dx3 += -1
+    } else if (x3 <= 0) {
+        dx3 += 1
+    }
+    if (x4 >= 4) {
+        dx4 += -1
+    } else if (x4 <= 0) {
+        dx4 += 1
+    }
+    if (x5 >= 4) {
+        dx5 += -1
+    } else if (x5 <= 0) {
+        dx5 += 1
+    }
+}
 let y5 = 0
 let y4 = 0
 let y3 = 0
@@ -52,33 +81,7 @@ y = 0
 change = 1
 basic.forever(function () {
     if (change == 1) {
-        basic.clearScreen()
-        y = 0
-        if (x >= 4) {
-            dx += -1
-        } else if (x <= 0) {
-            dx += 1
-        }
-        if (x2 >= 4) {
-            dx2 += -1
-        } else if (x2 <= 0) {
-            dx2 += 1
-        }
-        if (x3 >= 4) {
-            dx3 += -1
-        } else if (x3 <= 0) {
-            dx3 += 1
-        }
-        if (x4 >= 4) {
-            dx4 += -1
-        } else if (x4 <= 0) {
-            dx4 += 1
-        }
-        if (x5 >= 4) {
-            dx5 += -1
-        } else if (x5 <= 0) {
-            dx5 += 1
-        }
+        變數()
         x += dx
         x2 += dx2
         x3 += dx3
@@ -94,33 +97,7 @@ basic.forever(function () {
         }
         basic.pause(100)
     } else if (change == 2) {
-        basic.clearScreen()
-        y = 0
-        if (x >= 4) {
-            dx += -1
-        } else if (x <= 0) {
-            dx += 1
-        }
-        if (x2 >= 4) {
-            dx2 += -1
-        } else if (x2 <= 0) {
-            dx2 += 1
-        }
-        if (x3 >= 4) {
-            dx3 += -1
-        } else if (x3 <= 0) {
-            dx3 += 1
-        }
-        if (x4 >= 4) {
-            dx4 += -1
-        } else if (x4 <= 0) {
-            dx4 += 1
-        }
-        if (x5 >= 4) {
-            dx5 += -1
-        } else if (x5 <= 0) {
-            dx5 += 1
-        }
+        變數()
         x += dx
         x2 += dx2
         x3 += dx3
@@ -136,47 +113,7 @@ basic.forever(function () {
         }
         basic.pause(100)
     } else if (change == 3) {
-        basic.clearScreen()
-        if (y > 5) {
-            y = 0
-        }
-        if (y2 > 5) {
-            y2 = 0
-        }
-        if (y3 > 5) {
-            y3 = 0
-        }
-        if (y4 > 5) {
-            y4 = 0
-        }
-        if (y5 > 5) {
-            y5 = 0
-        }
-        if (x >= 4) {
-            dx += -1
-        } else if (x <= 0) {
-            dx += 1
-        }
-        if (x2 >= 4) {
-            dx2 += -1
-        } else if (x2 <= 0) {
-            dx2 += 1
-        }
-        if (x3 >= 4) {
-            dx3 += -1
-        } else if (x3 <= 0) {
-            dx3 += 1
-        }
-        if (x4 >= 4) {
-            dx4 += -1
-        } else if (x4 <= 0) {
-            dx4 += 1
-        }
-        if (x5 >= 4) {
-            dx5 += -1
-        } else if (x5 <= 0) {
-            dx5 += 1
-        }
+        變數()
         x += dx
         x2 += dx2
         x3 += dx3
